@@ -42,5 +42,5 @@ def downloader(self, url, res, directory, *args, **kwargs):
 video_url = "https://www.youtube.com/watch?v=TIymoKXRTZg"
 resulotion = "1080p"
 directory = "D:/youtube/"
-video = YouTube(video_url)
-stream = video.streams.filter(res=resulotion).first().download(directory)
+
+test = downloader(url=video_url, res=resulotion, directory=directory)
